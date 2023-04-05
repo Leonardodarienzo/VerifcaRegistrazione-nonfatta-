@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+    <h1 align="center">Registrazione LeoTwitter</h1>
+    <form action="/register" method="POST">
+        <center>
+
+        
+        <label for="name">Nome:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="cognome">Cognome:</label><br>
+        <input type="text" id="cognome" name="cognome" required><br>
+        <label for="data">Data di nascita:</label><br>
+        <input type="date" id="data" name="data"><br>
+        <label for="nazione">Nazione di nascita:</label><br>
+
+        <select id="nazione">
+            <option value="italia">Italia</option>
+            <option value="francia">Francia</option>
+            <option value="germania">Germania</option>
+            <option value="america">America</option>
+            <option value="inghilterra">Inghilterra</option>
+
+        </select><br>
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br>
+
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br/>
+        <label for="password">Conferma Password:</label><br>
+        <input type="password" id="passwordC" name="passwordC" required><br/>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="lingue">Lingue conosciute:</label><br>
+        
+        <select id="lingue">
+            <option value="italiano">Italiano</option>
+            <option value="francese">Francese</option>
+            <option value="tedesco">Tedesco</option>
+            <option value="americano">Americano</option>
+            <option value="Inglese">Inglese</option>
+        
+        </select><br>
+
+        <label for="consenso">Consenti all'invio di informazione pubblicitaria?</label><br>
+        <label>
+            <input type="radio" name="consenso" value="Si" checked>
+            Si
+        </label>
+        <label>
+            <input type="radio" name="consenso" value="No">
+            No
+        </label><br>
+
+        <input type="submit" value="Invia registrazione">
+    </center>
+      </form>
+
+
+</body>
+</html>
